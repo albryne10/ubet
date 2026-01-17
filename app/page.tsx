@@ -31,7 +31,7 @@ export default function Home() {
 
 
               {/* Download Buttons – Professional Official Badges */}
-<div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-md mx-auto lg:mx-0 lg:justify-start">
+<div className="pr-4 flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-md mx-auto lg:mx-0 lg:justify-start">
   {/* App Store */}
   <a
     href="https://play.google.com"          // ← your real link
