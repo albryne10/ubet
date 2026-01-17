@@ -31,37 +31,35 @@ export default function Home() {
 
 
               {/* Download Buttons – Professional Official Badges */}
-<div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-md mx-auto lg:mx-0 lg:justify-start">
-  {/* App Store Badge */}
-  <a
-    href="https://apps.apple.com" // ← your REAL link
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block transition-transform hover:scale-105 active:scale-95"
-  >
-    <img
-      src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-      alt="Download on the App Store"
-      className="h-[65px] w-auto drop-shadow-md"
-      loading="lazy"
-    />
-  </a>
+<div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 flex-wrap">
+                  <a
+                    href="https://play.google.com/store/apps"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform hover:scale-105"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                      alt="Get it on Google Play"
+                      className="h-12 sm:h-14 w-auto"
+                      style={{ height: "48px", width: "144px" }}
+                    />
+                  </a>
 
-  {/* Google Play Badge */}
-  <a
-    href="https://play.google.com" // ← your REAL link
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block transition-transform hover:scale-105 active:scale-95"
-  >
-    <img
-      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-      alt="Get it on Google Play"
-      className="h-[65px] w-auto drop-shadow-md"
-      loading="lazy"
-    />
-  </a>
-</div>
+                  <a
+                    href="https://www.apple.com/app-store/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform hover:scale-105"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                      alt="Download on the App Store"
+                      className="h-12 sm:h-14 w-auto"
+                      style={{ height: "48px", width: "144px" }}
+                    />
+                  </a>
+                </div>
 </div>
 {/* RIGHT COLUMN – Screenshots – CENTERED GRID */}
     <div className="
