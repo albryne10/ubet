@@ -25,7 +25,7 @@ export default function Home() {
               {/* Headline */}
               <div className="space-y-4 w-full max-w-md">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-balance">
-                  Challenge yourself and train your willpower with UberBet
+                  Challenge yourself and train your willpower with UberBety
                 </h1>
               </div>
 
