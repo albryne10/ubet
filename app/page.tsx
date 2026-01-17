@@ -32,32 +32,30 @@ export default function Home() {
 
               {/* Download Buttons – Professional Official Badges */}
 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-md mx-auto lg:mx-0 lg:justify-start">
-  {/* App Store Badge */}
   <a
-    href="https://apps.apple.com" // ← replace with your REAL app link
+    href="https://apps.apple.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="block transition-transform hover:scale-105 active:scale-95"
+    className="block transition-transform hover:scale-105 active:scale-95 w-56 h-16 flex items-center justify-center" // fixed button-like size
   >
     <img
       src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
       alt="Download on the App Store"
-      className="h-14 w-auto drop-shadow-md"   // ← key change: fixed height + auto width
+      className="max-h-12 w-auto drop-shadow-md" // cap height a bit smaller than container
       loading="lazy"
     />
   </a>
 
-  {/* Google Play Badge */}
   <a
-    href="https://play.google.com" // ← replace with your REAL app link
+    href="https://play.google.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="block transition-transform hover:scale-105 active:scale-95"
+    className="block transition-transform hover:scale-105 active:scale-95 w-56 h-16 flex items-center justify-center"
   >
     <img
       src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
       alt="Get it on Google Play"
-      className="h-14 w-auto drop-shadow-md"   // ← same fixed height
+      className="max-h-12 w-auto drop-shadow-md"
       loading="lazy"
     />
   </a>
