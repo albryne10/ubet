@@ -25,7 +25,7 @@ export default function Home() {
               {/* Headline */}
               <div className="space-y-4 w-full max-w-md">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-balance">
-                  Challenge yourself and train your willpower with UberBety
+                  Challenge yourself and train your willpower with UberBet
                 </h1>
               </div>
 
@@ -42,9 +42,7 @@ export default function Home() {
     <img
       src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
       alt="Download on the App Store"
-      width={215}   // ≈250×83 scaled nicely
-      height={65}
-      className="w-[215px] h-auto drop-shadow-md"
+      className="h-14 w-auto drop-shadow-md"   // ← key change: fixed height + auto width
       loading="lazy"
     />
   </a>
@@ -59,9 +57,7 @@ export default function Home() {
     <img
       src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
       alt="Get it on Google Play"
-      width={230}   // Google badges are slightly wider
-      height={68}
-      className="w-[230px] h-auto drop-shadow-md"
+      className="h-14 w-auto drop-shadow-md"   // ← same fixed height
       loading="lazy"
     />
   </a>
