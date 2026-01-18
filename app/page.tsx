@@ -87,7 +87,7 @@ export default function Home() {
         ring-1 ring-black/5
       ">
         <Image
-          src="/images/photo-2026-01-17-08-29-43-portrait.png"
+          src="/images/1-portrait.png"
           alt="UberBet App Screenshot 1"
           fill
           className="object-cover"
@@ -107,7 +107,7 @@ export default function Home() {
         ring-1 ring-black/5
       ">
         <Image
-          src="/images/photo-2026-01-17-08-29-43-portrait.png"
+          src="/images/3-portrait.png"
           alt="UberBet App Screenshot 2"
           fill
           className="object-cover"
@@ -127,7 +127,7 @@ export default function Home() {
         ring-1 ring-black/5
       ">
         <Image
-          src="/images/photo-2026-01-17-08-29-43-portrait.png"
+          src="/images/4-portrait.png"
           alt="UberBet App Screenshot 3"
           fill
           className="object-cover"
