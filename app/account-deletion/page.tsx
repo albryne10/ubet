@@ -64,12 +64,12 @@ export default function AccountDeletion() {
 
             <p className="leading-relaxed mt-12 text-center md:text-left">
               If you have any questions about this process or need help, just reply to the same email thread or contact us at{" "}
-              <a href="mailto:support@uberbet.app" className="text-primary hover:underline">
+              <a href="mailto:support@uberbet.app" className="hover:underline">
                 support@uberbet.app
               </a>.
             </p>
 
-            <p className="text-center text-muted-foreground mt-12 pt-8 border-t">
+            <p className="text-center mt-12 pt-8 border-t">
               Thank you for being part of the UberBet community. We wish you the best.
             </p>
           </section>
