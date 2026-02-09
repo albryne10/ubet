@@ -79,7 +79,7 @@ export default function Home() {
   </a>
 
   {/* App Store - static "coming soon" image (no link) */}
-  <div className="block min-w-[160px] sm:min-w-[180px]">
+  <div className="">
     <img
       src="/images/appStoreComingSoon.png"
       alt="Available on the App Store - Coming Soon"
