@@ -61,7 +61,7 @@ export default function Home() {
     />
   </a>*/}
   
-  <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+
   {/* Google Play - clickable badge */}
   <a
     href="https://play.google.com/store/apps/details?id=com.brandfix.uberbet"
@@ -81,14 +81,14 @@ export default function Home() {
   {/* App Store - static "coming soon" image (no link) */}
   <div className="block min-w-[160px] sm:min-w-[180px]">
     <img
-      src="/images/appStoreComingSoon.png"
+      src="/images/appStoreComingSoon.jpeg"
       alt="Available on the App Store - Coming Soon"
       className="h-[90px] w-auto object-contain drop-shadow-md mx-auto"
       height={90}
       loading="lazy"
     />
   </div>
-</div>
+
 
   {/* Google Play */}
   

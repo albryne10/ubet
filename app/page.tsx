@@ -33,7 +33,7 @@ export default function Home() {
               {/* Download Buttons – Professional Official Badges */}
 <div className="pr-4 flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-md mx-auto lg:mx-0 lg:justify-start">
   {/* App Store */}
-  <a
+  {/*<a
     href="https://play.google.com"          // ← your real link
     target="_blank"
     rel="noopener noreferrer"
@@ -59,7 +59,33 @@ export default function Home() {
       className="h-16 w-auto object-contain drop-shadow-md mx-auto"  // ← key: same height + auto width
       loading="lazy"
     />
+  </a>*/}
+  
+  <a
+    href="https://play.google.com/store/apps/details?id=com.brandfix.uberbet"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block transition-transform hover:scale-105 active:scale-95 min-w-[160px] sm:min-w-[180px]"
+  >
+    <img
+      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+      alt="Get it on Google Play"
+      className="h-[90px] w-auto drop-shadow-md mx-auto"
+      height={90}
+      loading="lazy"
+    />
   </a>
+
+  {/* App Store - static "coming soon" image (no link) */}
+  <div className="block min-w-[160px] sm:min-w-[180px]">
+    <img
+      src="/images/appStoreComingSoon.jpeg"
+      alt="Available on the App Store - Coming Soon"
+      className="h-[90px] w-auto object-contain drop-shadow-md mx-auto"
+      height={90}
+      loading="lazy"
+    />
+  </div>
 
   {/* Google Play */}
   
