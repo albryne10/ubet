@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -65,6 +67,15 @@ export default function Home() {
     href="https://play.google.com/store/apps/details?id=com.brandfix.uberbet"
     target="_blank"
     rel="noopener noreferrer"
+      onClick={() => {
+    if (window.ttq) {
+      window.ttq.track("InitiateCheckout", {  // or "AddToCart" or make a custom event "PlayStoreClick"
+        content_name: "UberBet App Download",
+        value: 0,
+        currency: "EUR",
+      });
+    }
+  }}
     className="block transition-transform hover:scale-105 active:scale-95 min-w-[160px] sm:min-w-[180px]"
   >
     <img

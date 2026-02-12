@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -63,7 +65,7 @@ export default function Home() {
   
 
   {/* Google Play - clickable badge */}
-  <a
+ {/* <a
     href="https://play.google.com/store/apps/details?id=com.brandfix.uberbet"
     target="_blank"
     rel="noopener noreferrer"
@@ -76,7 +78,31 @@ export default function Home() {
       height={90}
       loading="lazy"
     />
-  </a>
+  </a> */}
+  
+  <a
+  href="https://play.google.com/store/apps/details?id=com.brandfix.uberbet"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    if (window.ttq) {
+      window.ttq.track("InitiateCheckout", {  // or "AddToCart" or make a custom event "PlayStoreClick"
+        content_name: "UberBet App Download",
+        value: 0,
+        currency: "EUR",
+      });
+    }
+  }}
+  className="block transition-transform hover:scale-105 active:scale-95 min-w-[160px] sm:min-w-[180px]"
+>
+  <img
+    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    alt="Get it on Google Play"
+    className="h-[90px] w-auto drop-shadow-md mx-auto"
+    height={90}
+    loading="lazy"
+  />
+</a>
 
   {/* App Store - static "coming soon" image (no link) */}
   <div className="block min-w-[160px] sm:min-w-[180px]">
