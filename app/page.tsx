@@ -27,7 +27,7 @@ export default function Home() {
               {/* Headline */}
               <div className="space-y-4 w-full max-w-md">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-balance">
-                  Challenge yourself and train your willpower with UberBet
+                  Challenge yourself and train your willpower with SoarBy
                 </h1>
               </div>
 
@@ -67,15 +67,6 @@ export default function Home() {
     href="https://play.google.com/store/apps/details?id=com.brandfix.uberbet"
     target="_blank"
     rel="noopener noreferrer"
-      onClick={() => {
-    if (window.ttq) {
-      window.ttq.track("InitiateCheckout", {  // or "AddToCart" or make a custom event "PlayStoreClick"
-        content_name: "UberBet App Download",
-        value: 0,
-        currency: "EUR",
-      });
-    }
-  }}
     className="block transition-transform hover:scale-105 active:scale-95 min-w-[160px] sm:min-w-[180px]"
   >
     <img
