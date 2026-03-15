@@ -67,12 +67,14 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block transition-transform hover:scale-105 active:scale-95 min-w-[160px] sm:min-w-[180px]"
-                  onClick={() => {
-    // Fire Meta Pixel custom event
-    if (window.fbq) {
-      window.fbq('trackCustom', 'PlayStore_Click');  
-      // or use a standard event if it fits better:
-      // window.fbq('track', 'Lead');  ← good for "interest in app"
+                 onClick={() => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Lead', {          // ← standard event: Lead
+        content_name: 'Google Play Badge',    // optional: describe what triggered it
+        content_category: 'App Promotion',    // optional
+        value: 1,                             // optional: assign a value (even 1 for non-monetary)
+        currency: 'USD'                       // optional but recommended if using value
+      });
     }
   }}
                 >
