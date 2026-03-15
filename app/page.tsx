@@ -67,6 +67,14 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block transition-transform hover:scale-105 active:scale-95 min-w-[160px] sm:min-w-[180px]"
+                  onClick={() => {
+    // Fire Meta Pixel custom event
+    if (window.fbq) {
+      window.fbq('trackCustom', 'PlayStore_Click');  
+      // or use a standard event if it fits better:
+      // window.fbq('track', 'Lead');  ← good for "interest in app"
+    }
+  }}
                 >
                   <img
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
